@@ -1,37 +1,39 @@
-/* Estilo global */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+    }
+    
 :root {
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; 
     /* fix for Chrome */
 }
-
-@supports (font-variation-settings: normal) {
-:root { font-family: InterVariable, sans-serif; }
-}
-
-/* Layout da página */
-body {
-    display: flex;
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
 }
 
-/* Sidebar fixa à esquerda */
-#sidebar {
-    position: fixed;
-    width: 50%;
-    height: 100vh;
-    background-color: #333;
-}
+.animacao {
+    animation: move 0.5s infinite linear;
+  }
 
-/* Conteúdo rolável à direita */
-#content {
-    margin-left: 50%;
-    width: 100%;
-    overflow-y: auto;
-}
+@keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(0)
+    }
+
+  }
+
+
+/* Layout da página */
+
+
+
