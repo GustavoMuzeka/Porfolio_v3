@@ -1,7 +1,6 @@
 const glowDiv = document.querySelector('.glow');
 const donwloadCV = document.querySelector('.donwload')
 
-
 document.addEventListener('mousemove', (e) => {
     const x = e.clientX;
     const y = e.clientY;
@@ -18,4 +17,6 @@ donwloadCV.addEventListener('mouseout', (entrou) =>{
     
     donwloadCV.classList.add('animacao')
 
-}) 
+}); 
+
+console.log(letras.childNodes)
