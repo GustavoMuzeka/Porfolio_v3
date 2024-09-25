@@ -9,19 +9,18 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex bg-slate-900"  >
-    <div class="fixed pointer-events-none -z-10 top-0 left-0 glow inset-0 transition duration-300" style="background: radial-gradient(600px at 552px 338px, rgba(29, 78, 216, 0.15), transparent 80%);"></div>
-    </div>
+<body class="lg:flex bg-slate-900"  >
+    <div class="max-sm:hidden sm:hidden  lg:block fixed pointer-events-none -z-10 top-0 left-0 glow inset-0 transition duration-300" style="background: radial-gradient(600px at 635px 262px, rgba(29, 78, 216, 0.3), transparent 80%);"></div>
     <section>
-        <div id="sidebar" class="fixed w-2/4 h-screen w-100 flex flex-col justify-center items-center">
-            <div class="">
+        <div id="sidebar" class="lg:fixed lg:w-2/4 lg:h-screen p-16 lg:p-0 w-100 flex flex-col justify-center items-center">
+            <div>
                 <div class="titulo-pai">
-                    <h1 class="titulo text-5xl font-bold mb-2 text-blue-50">Gustavo Muzeka</h1>
+                    <h1 class="titulo text-3xl lg:text-5xl font-bold mb-2 text-blue-50">Gustavo Muzeka</h1>
                 </div>
                     <h2 class="mb-2 text-blue-50 opacity-100">Software Engineer</h2>
                 <h3 class="mb-20 text-blue-100 opacity-75 hover:opacity-100 ">Transformando ideias em códigos</h3>
                 <nav>
-                    <ul>
+                    <ul class="hidden lg:block">
                         <li class="pl-[60px] relative  text-sm font-semibold my-3 menu-item text-blue-100 opacity-75 before:content-[''] before:absolute before:left-0 before:top-2/4 before:w-10 before:h-[0.5px] before:bg-blue-100 before:translate-y-2/4 hover:before:w-[80px] hover:before:duration-200 hover:pl-[100px] hover:duration-200"><a href="#sobre">SOBRE</a></li>
                         <li class="pl-[60px] relative  text-sm font-semibold my-3 menu-item text-blue-100 opacity-75 before:content-[''] before:absolute before:left-0 before:top-2/4 before:w-10 before:h-[0.5px] before:bg-blue-100 before:translate-y-2/4 hover:before:w-[80px] hover:before:duration-200 hover:pl-[100px] hover:duration-200"><a href="#servicos">EXPERIÊNCIAS</a></li>
                         <li class="pl-[60px] relative  text-sm font-semibold my-3 menu-item text-blue-100 opacity-75 before:content-[''] before:absolute before:left-0 before:top-2/4 before:w-10 before:h-[0.5px] before:bg-blue-100 before:translate-y-2/4 hover:before:w-[80px] hover:before:duration-200 hover:pl-[100px] hover:duration-200"><a href="#projects">PROJETOS</a></li>
@@ -40,10 +39,10 @@
             </div>
         </div>
     </section>
-    <section id="sobre" class="ml-[45%] mb-10 flex flex-col p-24">
+    <section id="sobre" class="lg:ml-[45%] mb-10 flex flex-col lg:p-24 px-10">
         <section class="text-blue-200 mb-24">
             <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Sobre
+                <h2 class="text-sm pt-10 font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Sobre
                 </h2>
             </div>
             <p>Minha carreira profissional começou na <strong class="text-white-200">Folk</strong>, onde atuei por cinco anos com foco em <strong class="text-yellow-200">SQL</strong> e <strong class="text-blue-200">Infraestrutura</strong>. Após essa experiência, fundei a <strong class="text-green-200">Chronos</strong>, uma startup voltada ao desenvolvimento web, onde criei projetos utilizando <strong class="text-yellow-200">Python</strong>, <strong class="text-yellow-200">JavaScript</strong>, e frameworks como <strong class="text-blue-400">React</strong>, <strong class="text-blue-400">Node.js</strong>, e <strong class="text-blue-400">jQuery</strong>, além de trabalhar com <strong class="text-blue-400">WordPress</strong> para o desenvolvimento ágil de websites.</p>
@@ -54,7 +53,7 @@
         </section>
         <section class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 " id="servicos">
             <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience
+                <h2 class="text-sm font-bold uppercase tracking-widest pt-10 text-slate-200 lg:sr-only">Experience
                 </h2>
             </div>
             <div>
@@ -242,7 +241,7 @@
         <!-- Div fixa no topo para o título quando a seção estiver visível na tela -->
         <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
             <!-- Título da seção que fica oculto em telas grandes (classe 'lg:sr-only') -->
-            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Projects</h2>
+            <h2 class="pt-10 text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Projects</h2>
         </div>
         <!-- Container principal da lista de projetos -->
         <div>
@@ -311,30 +310,14 @@
         </div>
         <!-- Link para ver o arquivo completo de projetos -->
         <div class="mt-12">
-            <a class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Project Archive" href="/archive">
-                <span>
-                    <span class="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">View Full Project<!-- --> 
-
-                    </span>
-                    <span class="whitespace-nowrap">
-                        <span class="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">Archive
-
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd">
-
-                            </path>
-                        </svg>
-                    </span>
-                </span>
-            </a>
-        </div>
+            <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" href="/resume.pdf" target="_blank" rel="noreferrer noopener" aria-label="View Full Résumé (opens in a new tab)">
+                <span>Mais<!-- --> <span class="inline-block">Projetos<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg></span></span></a></div>    
     </section>
 <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
     <p>Brevemente desenhado no<!-- --> 
         <a href="https://www.figma.com/" class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a> <!-- -->e codado no<!-- --> 
         <a href="https://code.visualstudio.com/" class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" rel="noreferrer noopener" aria-label="Visual Studio Code (opens in a new tab)">Visual Studio Code</a> <!-- --> seguindo como modelo a Brittany Chiang. Utilizado
-        <a href="https://tailwindcss.com/" class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" rel="noreferrer noopener" aria-label="Tailwind CSS (opens in a new tab)">Tailwind CSS</a>. Fonte utilizado em todo o texto<!-- --> 
+        <a href="https://tailwindcss.com/" class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" rel="noreferrer noopener" aria-label="Tailwind CSS (opens in a new tab)">Tailwind CSS</a>. Fonte utilizada em todo o texto<!-- --> 
         <a href="https://rsms.me/inter/" class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" rel="noreferrer noopener" aria-label="Inter (opens in a new tab)">Inter</a></p></footer>
 
 </section>
