@@ -30,5 +30,3 @@ donwloadCV.addEventListener('mouseout', (entrou) =>{
     donwloadCV.classList.add('animacao')
 
 }); 
-
-console.log(letras.childNodes)
